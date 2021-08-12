@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form method="POST" action="calcular.php">
+        <p>Calcular Fretes</p>
+
+            <label for="nomeCompleto">
+                Nome Completo
+                <input type="text" id="nomeCompleto" name="nomeCompleto"required>
+            </label>
+
+            <label for="cidadeDestino">
+                Salário $
+                <input type="text" id="cidadeDestino" name="cidadeDestino" required>
+            </label>
+
+        <label for="genero">
+            Genêro
+            <input type="radio" name="genero" value="feminino">Feminino <br>
+            <input type="radio" name="genero" value="masculino">Masculino <br>
+            <input type="radio" name="genero" value="outros">Outros <br>
+        </label>
+
+        <label>
+            <span>Cargo</span>
+         <select name="cargos">
+            <option value="Administração">Administração</option>
+            <option value="TI" selected>TI</option>
+            <option value="Gerente de Projetos">Gerente de Projetos</option>
+            <option value="Engenheiro">Engenheiro</option>
+            <option value="Auxiliar Logístico">Auxiliar Logístico</option>
+            <option value="Assistente Comercial">Assistente Comercial</option>
+            <option value="Biomedicina">Biomedicina</option>
+            <option value="Estatísticas">Recepcionista</option>
+            <option value="Recepcionista">Recepcionista</option>
+            <option value="Recepcionista">Recepcionista</option>
+          </select>
+       </label>
+
+
+        <button>Enviar</button>
+
+    </form>
+
+</body>
