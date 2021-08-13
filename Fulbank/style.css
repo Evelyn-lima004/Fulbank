@@ -6,10 +6,10 @@
 
 body {
     min-height: 100vh;
-    background: #a4d0d8;
-    align-items: center;
-    margin-left: 650px;
-    margin-top: 60px;
+    background: #b0eb99;
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    place-items: center;
 }
 
 p {
@@ -17,6 +17,13 @@ p {
     font-weight: 700;
     color: #222;
     margin-bottom: 5rem;
+}
+
+.linhas {
+    font-size: 1.3125rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 25px;
 }
 
 form {
@@ -28,7 +35,7 @@ form {
     background: #fff;
     padding: 4rem;
     border-radius: 0.5rem;
-    
+    box-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.15);
 }
 
 label {
@@ -41,18 +48,34 @@ label {
 
 input {
     font-size: 1.1875rem;
-    color: #080808;
+    color: #404040;
     padding: 1rem 0 0.5rem 0;
     width: 100%;
     border: none;
-    border-color: #a5a5a5;
+    border-color: #a0a0a0;
     border-bottom-width: 1px;
     border-bottom-style: dotted;
     margin-bottom: 3rem;
     transition: 0.15s linear;
 }
 
+div{
+    margin-left: -243px;
+}
 
+select {
+    display: flex;
+    margin: 10px;
+    width: 190px;
+    padding: 5px 35px 5px 5px;
+    font-size: 16px;
+    height: 34px;
+    color: gray;
+    border-radius: 0.4rem;
+    margin-bottom: 3rem;
+    margin-right: 90px;
+
+  }
 
 button {
     font-size: 0.8125rem;
@@ -62,7 +85,7 @@ button {
     padding: 1rem 2rem;
     cursor: pointer;
     background: transparent;
-    color: #3dc8c1;
+    color: #21ce5ad8;
     border: 1px solid currentColor;
     border-radius: 4px;
     margin-top: 0.5rem;
@@ -72,11 +95,48 @@ button {
 button:hover,
 button:focus {
     outline: none;
-    background: #3dbfc8;
+    background: #8bd68e;
     color: #fff;
 }
 
-.total {
+
+.fem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.fem input{
+    width: 20px;
+    margin: 0;
+}
+
+.masc{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.masc input{
+    width: 20px;
+    margin: 0;
+}
+
+.outros{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.outros input{
+    width: 20px;
+    margin: 0;
+}
+
+#total {
     font-size: 25px;
     font-weight: bold;
     resize: none;

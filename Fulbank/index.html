@@ -5,44 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro </title>
+    <title>Aumento Salarial</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <form method="POST" action="calcular.php">
-        <p>Calcular Fretes</p>
+        <p></p>
 
             <label for="nomeCompleto">
                 Nome Completo
                 <input type="text" id="nomeCompleto" name="nomeCompleto"required>
             </label>
 
-            <label for="cidadeDestino">
+            <label for="salario">
                 Salário $
-                <input type="text" id="cidadeDestino" name="cidadeDestino" required>
+                <input type="text" id="salario" name="salarioAtual" required>
             </label>
 
-        <label for="genero">
-            Genêro
-            <input type="radio" name="genero" value="feminino">Feminino <br>
-            <input type="radio" name="genero" value="masculino">Masculino <br>
+        <!-- <label for="genero">
+            Genêro <br>
+            <input type="radio" name="genero" value="feminino">Feminino 
+            <input type="radio" name="genero" value="masculino">Masculino 
             <input type="radio" name="genero" value="outros">Outros <br>
-        </label>
+        </label> -->
+
+        <label for="genero">Selecione um gênero</label><br>
+ 
+        <div class="fem">
+            <input type="radio" id="fem" name="genero" value="F">
+            <label for="fem">Feminino:</label>
+            
+        </div>
+        
+        <div class="masc">
+            <input type="radio" id="masc" name="genero" value="M">
+            <label for="masc">Masculino:</label>
+        </div> 
+
+        <div class="outros">
+            <input type="radio" id="outros" name="genero" value="O">
+            <label for="outros">Outros:</label>
+
+        </div>
 
         <label>
-            <span>Cargo</span>
-         <select name="cargos">
+           <br> <span>Cargo</span>
+         <select name="cargo">
             <option value="Administração">Administração</option>
             <option value="TI" selected>TI</option>
             <option value="Gerente de Projetos">Gerente de Projetos</option>
-            <option value="Engenheiro">Engenheiro</option>
+            <option value="Engenheiro de Software">Engenheiro de Software</option>
             <option value="Auxiliar Logístico">Auxiliar Logístico</option>
             <option value="Assistente Comercial">Assistente Comercial</option>
-            <option value="Biomedicina">Biomedicina</option>
-            <option value="Estatísticas">Recepcionista</option>
+            <option value="DBA">DBA</option>
+            <option value="Estatísticas">Estatísticas</option>
             <option value="Recepcionista">Recepcionista</option>
-            <option value="Recepcionista">Recepcionista</option>
+            <option value="Design">Design</option>
+            <option value="Back-end">Desenvolvedor Back-end</option>
+            <option value="Front-end">Desenvolvedor Front-end</option>
           </select>
        </label>
 
