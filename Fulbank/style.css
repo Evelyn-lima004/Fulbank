@@ -100,41 +100,19 @@ button:focus {
 }
 
 
-.fem{
+.input-radio{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
 }
 
-.fem input{
+.input-radio input{
     width: 20px;
     margin: 0;
 }
 
-.masc{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-}
 
-.masc input{
-    width: 20px;
-    margin: 0;
-}
-
-.outros{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-}
-
-.outros input{
-    width: 20px;
-    margin: 0;
-}
 
 #total {
     font-size: 25px;
